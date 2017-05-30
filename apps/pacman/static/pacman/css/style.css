@@ -1,0 +1,231 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: black;
+}
+
+.row {
+	height: 20px;
+}
+
+div.row div{
+	display: inline-block;
+	vertical-align: top;
+}
+div.brick1 {
+	border-left: 1px solid blue;
+	border-top: 1px solid blue;
+	border-top-left-radius: 3px;
+	width: 19px;
+	height: 19px;
+}
+div.brick2 {
+	border-bottom: 1px solid blue;
+	border-top: 1px solid blue;
+	height: 18px;
+	width: 20px;
+}
+div.brick3 {
+	border-top: 1px solid blue;
+	height: 19px;
+	width: 20px;
+}
+div.brick4 {
+	border-left: 1px solid blue;
+	border-right: 1px solid blue;
+	width: 18px;
+	height: 20px;
+}
+div.brick5 {
+	border-left: 1px solid blue;
+	border-bottom: 1px solid blue;
+	border-right: 1px solid blue;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	width: 18px;
+	height: 19px;
+}
+div.brick6 {
+	border-right: 1px solid blue;
+	border-top: 1px solid blue;
+	border-top-right-radius: 3px;
+	width: 19px;
+	height: 19px;
+}
+div.brick7 {
+	border-left: 1px solid blue;
+	border-bottom: 1px solid blue;
+	border-bottom-left-radius: 3px;
+	width: 19px;
+	height: 19px;
+}
+div.brick8 {
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;
+	border-bottom-right-radius: 3px;
+	width: 19px;
+	height: 19px;
+}
+div.brick9 {
+	border-bottom: 1px solid blue;
+	height: 19px;
+	width: 20px;
+}
+div.brick10 {
+	border-left: 1px solid blue;
+	border-right: 1px solid blue;
+	border-top: 1px solid blue;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	width: 18px;
+	height: 19px;
+}
+div.brick11 {
+	border-bottom: 1px solid blue;
+	border-top: 1px solid blue;
+	border-right: 1px solid blue;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	width: 19px;
+	height: 18px;
+}
+div.brick12 {
+	border-left: 1px solid blue;
+	border-bottom: 1px solid blue;
+	border-top: 1px solid blue;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	width: 19px;
+	height: 18px;
+}
+div.brick13 {
+	border-left: 1px solid blue;
+	width: 19px;
+	height: 20px;
+}
+div.brick14 {
+	border-right: 1px solid blue;
+	width: 19px;
+	height: 20px;
+}
+div.coin {
+	background-image: url('../img/dot.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	height: 20px;
+	width: 20px;
+}
+div.cherry {
+	background-image: url('../img/cherries.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+	height: 20px;
+	width: 20px;
+}
+div#pacman {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+div.pacman {
+	background-image: url('../img/pacman.gif');
+}
+div.pacmanhit {
+	background-image: url('../img/pacmanhit.gif');
+}
+div.ghost1L, div.ghost1R, div.ghost1U, div.ghost1D, div.ghost2L, div.ghost2R, div.ghost2U, div.ghost2D, div.ghost3L, div.ghost3R, div.ghost3U, div.ghost3D, div.ghost4L, div.ghost4R, div.ghost4U, div.ghost4D {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+div.ghost1R {
+	background-image: url('../img/ghost1-right.gif');
+}
+div.ghost1L {
+	background-image: url('../img/ghost1-left.gif');
+}
+div.ghost1U {
+	background-image: url('../img/ghost1-up.gif');
+}
+div.ghost1D {
+	background-image: url('../img/ghost1-down.gif');
+}
+div.ghost2R {
+	background-image: url('../img/ghost2-right.gif');
+}
+div.ghost2L {
+	background-image: url('../img/ghost2-left.gif');
+}
+div.ghost2U {
+	background-image: url('../img/ghost2-up.gif');
+}
+div.ghost2D {
+	background-image: url('../img/ghost2-down.gif');
+}
+div.ghost3R {
+	background-image: url('../img/ghost3-right.gif');
+}
+div.ghost3L {
+	background-image: url('../img/ghost3-left.gif');
+}
+div.ghost3U {
+	background-image: url('../img/ghost3-up.gif');
+}
+div.ghost3D {
+	background-image: url('../img/ghost3-down.gif');
+}
+div.ghost4R {
+	background-image: url('../img/ghost4-right.gif');
+}
+div.ghost4L {
+	background-image: url('../img/ghost4-left.gif');
+}
+div.ghost4U {
+	background-image: url('../img/ghost4-up.gif');
+}
+div.ghost4D {
+	background-image: url('../img/ghost4-down.gif');
+}
+div.empty{
+	width: 20px;
+	height: 20px;
+}
+div#text, div#score {
+	width: 810px;
+	height: 40px;
+	padding: 5px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+div#scoreBox {
+	margin: 20px;
+	padding: 20px;
+	color: #d92;
+}
+
+div#gameover {
+	width: 200px;
+	height: 100px;
+	background-color: white;
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	padding: 20px;
+}
+
+div#gameover h3, div#gameover p {
+	text-align: center;
+}

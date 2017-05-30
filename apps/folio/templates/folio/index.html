@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="author" content="Jonathan Ben-Ammi">
+    <meta name="description" content="Jonathan Ben-Ammi's portfolio is a showcase of who he is as a developer and as a person. He's a web developer with a track record of successful project engagement. Fast learner with attention to quality and detail in time-sensitive situations. There is nothing he cannot do once put to the task. He is looking for new opportunities to stretch and transform his coding skills.">
+    <title>Jonathan Ben-Ammi</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'folio/css/slice.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'folio/css/style.css' %}">
+    <!-- <script src="{% static 'folio/js/slice.js' %}"></script> -->
+  	<script>
+      function ready(callback){
+        document.addEventListener("DOMContentLoaded", function(){
+         callback()
+       })
+      }
+  		ready(function(){
+        console.log("Document is ready");
+
+        {% if errors %}
+        modal('contact_1', 'contact_2')
+        {% endif %}
+
+        {% if messages %}
+        modal('message_1', 'message_2')
+        {% endif %}
+  		})
+      var modal = function(id1, id2){
+        console.log("pressing button");
+        document.getElementById(id1).style.display='block';
+        document.getElementById(id2).style.float='none';
+      }
+      var modalClose = function(id1){
+        document.getElementById(id1).style.display='none';
+      }
+
+    </script>
+  </head>
+  <body class="salt">
+    <header>
+      <nav class="blueberry">
+          <p class="logo salt-text">Jonathan Ben-Ammi</p>
+          <ul class="right">
+            <li><a href="http://linkedin.com/in/jbenammi" target="_blank"><img src="{% static 'folio/img/linkedin.png' %}" alt="LinkedIn Logo"></a></li>
+            <li><a href="http://github.com/jbenammi" target="_blank"><img src="{% static 'folio/img/github.png' %}" alt="GitHub Logo"></a></li>
+            <li onclick="modal('contact_1', 'contact_2')"><a href="#" >Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="container scroll space-top-10">
+      <section class="row space-top-10">
+        <img class="col s14 m7 l6 offset-s1" src="{% static 'folio/img/jba.jpg' %}" alt="picture of jonathan Ben-ammi">
+        <article class="col s14 m7 l6 offset-s1 offset-m1 offset-l2">
+          <h3 class="space-top-10">Welcome...</h3>
+          <p>Jonathan is a web developer with a track record of successful project engagement. He's a fast learner with attention to quality and detail in time-sensitive situations. There is nothing he cannot do once put to the task. Jonathan is currently open for career opportunities as a front-end or back-end web developer in the Greater Seattle Area.
+          </p>
+          <p>Jonathan was most recently an instructor with Coding Dojo, a coding school located in Bellevue, Washington that teaches three full stacks in fourteen weeks. He taught fundamental coding principles of HTML, CSS, JavaScript, and Python to people seeking career transitions into the tech industry.</p>
+          <p>Below are some project examples that showcase Jonathan's coding abilities. Hover over any project to learn more about it. If you would like to know more about Jonathan, please feel free to contact him.</p>
+        </article>
+      </section>
+      <section class="row space-top-10">
+        <article class="article-info col s14 m4 l4 offset-s1 offset-m1 offset-l1 row">
+          <h3 class="pad-20">SliceCSS</h3>
+          <div class="dropdown">
+            <img id="slice_pic" src="{% static 'folio/img/Slicecss.jpg' %}" alt="image of Slicecss.com">
+            <div class="dropdown-content">
+              <p class="space-top-20">SliceCSS is an open-source CSS framework, built off of fundamentals started by Bootstrap, Materialize, and W3CSS. This new framework creates a more granular RWD grid based on a sixteen grid system and utilizes only CSS and JavaScript.</p>
+              <a href="http://slicecss.com" target="_blank"><button class="col s12 offset-s2 plum darker-3 salt-text">SliceCSS</button></a>
+              <h4 class="pad-20">Framework Technologies:</h4>
+              <div class="row">
+                <img class="col s4" src="{% static 'folio/img/html.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/css.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/JavaScript.png' %}" alt="">
+              </div>
+              <h4 class="pad-20">Demo Site Technologies:</h4>
+              <div class="row">
+                <img class="col s4" src="{% static 'folio/img/nodejs.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/expressjs.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/angular.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/ajax.png' %}" alt="">
+              </div>
+              <div class="row">
+                <img class="col s4" src="{% static 'folio/img/html.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/css.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/JavaScript.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="article-info col s14 m4 l4 offset-s1 offset-m1 offset-l1 row">
+          <h3 class="pad-20">BookRRaven</h3>
+          <div class="dropdown">
+            <img src="{% static 'folio/img/bookrraven.jpg' %}" alt="Picture of BookRRaven">
+            <div class="dropdown-content">
+              <p class="space-top-20">BookRRaven is an entertainment industry application that connects artists with venues for the purpose of booking artists. This is accomplished by allowing artists and venues to post information about themselves and contact eachother through the apps internal communication tool.</p>
+              <a href="http://www.bookrraven.com" target="_blank"><button class="col s12 offset-s2 cherry darker-2 salt-text">BookRRaven</button></a>
+              <h4 class="pad-20">Technologies:</h4>
+              <div class="row">
+                <img class="col s4" src="{% static 'folio/img/python.png' %}" alt="Python">
+                <img class="col s4" src="{% static 'folio/img/django.png' %}" alt="Django">
+                <img class="col s4" src="{% static 'folio/img/sqlite.png' %}" alt="SQLite">
+                <img class="col s4" src="{% static 'folio/img/html.png' %}" alt="HTML">
+              </div>
+              <div class="row">
+                <img class="col s4" src="{% static 'folio/img/css.png' %}" alt="CSS">
+                <img class="col s4" src="{% static 'folio/img/javascript.png' %}" alt="JavaScript">
+                <img class="col s4" src="{% static 'folio/img/jQuery.png' %}" alt="jQuery">
+                <img class="col s4" src="{% static 'folio/img/materialize.png' %}" alt="MaterializeCSS">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="article-info col s14 m4 l4 offset-s1 offset-m1 offset-l1 row">
+          <h3 class="pad-20">PacMan</h3>
+          <div class="dropdown">
+            <img src="{% static 'folio/img/PacMan.jpg' %}" alt="Picture of PacMan site">
+            <div class="dropdown-content">
+              <p class="space-top-20">PacMan is one of the assignments taught as part of the front-end fundamentals at Coding Dojo. Jonathan, while teaching the assignment, tweaked it to his specifications. Have fun trying out this clasic arcade game!</p>
+              <a href="{% url 'pacman:index' %}" target="_blank"><button class="col s12 offset-s2 lemon darker-2 salt-text">PacMan</button></a>
+              <h4 class="pad-20">Technologies:</h4>
+              <div class="row">
+                <img class="col s4" src="{% static 'folio/img/html.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/css.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/javascript.png' %}" alt="">
+                <img class="col s4" src="{% static 'folio/img/jQuery.png' %}" alt="jQuery">
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="blueberry h50">
+
+      </div>
+    </footer>
+    <div id=contact_1 class="modal-wrapper row">
+  		<div id="contact_2" class="modal salt lighter-5 col l8 m10 s14">
+        <img class="modal-closebtn" src="{% static 'folio/img/Xbutton.png' %}" alt="close button" onclick="modalClose('contact_1')">
+    		<h4 class="blueberry-text darker-3">Contact:</h4>
+  			<form action="{% url 'folio:mail' %}" method="post">
+  				{% csrf_token %}
+  				{{messageForm.as_p}}
+  				<button class="btn right blueberry darker-3 salt-text" type="submit" name="action">Send</button>
+  			</form>
+  		</div>
+    </div>
+    <div id=message_1 class="modal-wrapper row">
+      <div id="message_2" class="modal salt lighter-5 col l8 m10 s14">
+        <img class="modal-closebtn" src="{% static 'folio/img/Xbutton.png' %}" alt="close button" onclick="modalClose('message_1')">
+        {% if messages %}
+        {% for message in messages %}
+        <h2 class="modal-message blueberry-text darken-2">{{message}}</h2>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

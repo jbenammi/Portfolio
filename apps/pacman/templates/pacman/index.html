@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load staticfiles %}
+	<meta charset="UTF-8">
+	<meta name="author" content="Jonathan Ben-Ammi">
+	<title>PacMan Demo</title>
+	<meta name="description" content="PacMan is one of the assignments taught as part of the front-end fundamentals at Coding Dojo. Jonathan, while teaching the assignment, tweaked it to his specifications. Have fun trying out this clasic arcade game!">
+	<link rel="stylesheet" type="text/css" href="{% static 'pacman/css/style.css' %}">
+	<script type="text/javascript" src="{% static 'pacman/js/jquery-2.2.3.js' %}"></script>
+  <script type="text/javascript" src="{% static 'pacman/js/script.js' %}"></script>
+</head>
+<body>
+	<div id="world"></div>
+	<div id="pacman" class="pacman"></div>
+	<div id="ghost1" class="ghost1R"></div>
+	<div id="ghost2" class="ghost2R"></div>
+	<div id="ghost3" class="ghost3L"></div>
+	<div id="ghost4" class="ghost4L"></div>
+  <div id="scoreBox">
+    <p>SCORE: <span id="scoreText"></span></p>
+    <p>LIVES: <span id="livesText"></span></p>
+  </div>
+  <div id="gameover">
+    <h3>GAME OVER</h3>
+    <br>
+    <p>Higest Score: <span id="highest"></p>
+    <br>
+    <p><button>Play Again?</button></p>
+  </div>
+</body>
+</html>
